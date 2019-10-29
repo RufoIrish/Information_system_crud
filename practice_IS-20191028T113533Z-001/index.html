@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="fname" placeholder="first name"><br><br>
+        <input type="text" id="mname" placeholder="middle name"><br><br>
+        <input type="text" id="lname" placeholder="last name"><br><br>
+        <button type="submit">submit</button>
+    </form>
+</body>
+
+</html>
+<script>
+    $(document).ready(function(){
+        $("form").submit(function(){
+            var fname = $("#fname").val();
+            var mname = $("#mname").val();
+            var lname = $("#lname").val();
+            alert(fname + " " + mname + " " + lname);
+        })
+    })
+</script>
